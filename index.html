@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Anek+Gurmukhi:wght@600&family=Gabriela&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Furnito</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__links">
+                <li><a href="#" class="header__link">Home</a></li>
+                <li><a href="#" class="header__link">Furnitures <img src="imagenes/icon-chevron.svg" alt="" class="header__flecha"></a></li>
+                <li><a href="#" class="header__link">Sale</a></li>
+                <li><a href="#" class="header__link">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <p class="header__logo">Furnito</p>
+
+        <div class="header__acciones">
+            <form class="header__buscador">
+                <img src="imagenes/icon-search.svg" alt="" class="header__lupa">
+                <input type="search" class="header__input" placeholder="Search for furnitures" aria-label="Buscar muebles">
+            </form>
+            <a href="#" class="header__icono"><img src="imagenes/icon-heart.png" alt="Favoritos"></a>
+            <a href="#" class="header__icono header__icono--carrito">
+                <img src="imagenes/icon-cart.svg" alt="Carrito">
+                <span class="header__contador">1</span>
+            </a>
+            <a href="#" class="header__icono"><img src="imagenes/icon-user.svg" alt="Mi cuenta"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__envio">
+                <img src="imagenes/icon-truck.png" alt="" class="hero__camion">
+                <p class="hero__envio-texto">Next Day Delivery</p>
+                <p class="hero__envio-texto hero__envio-texto--negrita">Free Shipping for orders above $300</p>
+            </div>
+
+            <div class="hero__contenido">
+                <h1 class="hero__titulo">Your Place Will Never Be The Same Again With Our <span class="hero__resaltado">Fantastic Furniture.</span></h1>
+                <a href="#" class="btn btn--rojo hero__boton">Shop Now</a>
+            </div>
+
+            <img src="imagenes/hero-sofa.png" alt="Mujer sentada en un sofá azul" class="hero__imagen">
+
+            <a href="#" class="hero__sale">
+                <span class="hero__estrella">
+                    <img src="imagenes/sale-estrella.svg" alt="">
+                    <span class="hero__sale-texto">MAY<br>Sale</span>
+                </span>
+                <span class="hero__sale-link">Shop Sale</span>
+            </a>
+        </section>
+
+        <section class="inspirado">
+            <div class="inspirado__texto">
+                <h2 class="inspirado__titulo">Get Inspired</h2>
+                <p class="inspirado__parrafo">Take a look at our customer's own spaces where you can get style tips and tricks.</p>
+                <a href="#" class="btn btn--borde">Learn More</a>
+            </div>
+            <img src="imagenes/inspiracion.jpg" alt="Sala decorada" class="inspirado__imagen">
+        </section>
+
+        <section class="categorias">
+            <h2 class="titulo-seccion categorias__titulo">Furnitures</h2>
+            <div class="categorias__fondo">
+                <ul class="categorias__lista">
+                    <li class="categorias__item">
+                        <img src="imagenes/categoria-living-room.jpg" alt="Sofá verde en una sala" class="categorias__imagen">
+                        <h3 class="categorias__nombre">Living Room</h3>
+                    </li>
+                    <li class="categorias__item">
+                        <img src="imagenes/categoria-bedroom.jpg" alt="Cama con sábanas naranjas" class="categorias__imagen">
+                        <h3 class="categorias__nombre">Bedroom</h3>
+                    </li>
+                    <li class="categorias__item">
+                        <img src="imagenes/categoria-dining.jpg" alt="Comedor moderno" class="categorias__imagen">
+                        <h3 class="categorias__nombre">Dining</h3>
+                    </li>
+                    <li class="categorias__item">
+                        <img src="imagenes/categoria-lights.jpg" alt="Lámparas colgantes de cobre" class="categorias__imagen">
+                        <h3 class="categorias__nombre">Lights</h3>
+                    </li>
+                </ul>
+                <button class="categorias__flecha" aria-label="Ver más categorías">
+                    <img src="imagenes/icon-arrow.svg" alt="">
+                </button>
+            </div>
+        </section>
+
+        <section class="productos" id="productos">
+            <div class="productos__header">
+                <h2 class="titulo-seccion">What People Love</h2>
+                <a href="#productos" class="productos__ver-mas">View More</a>
+            </div>
+            <div class="productos__fondo">
+                <div class="productos__lista">
+                    <article class="card">
+                        <img src="imagenes/producto-leather-sofa.jpg" alt="Sofá de cuero naranja" class="card__imagen">
+                        <div class="card__info">
+                            <h3 class="card__nombre">3 - Seater Leather Sofa</h3>
+                            <div class="card__fila">
+                                <p class="card__precio">$1699</p>
+                                <div class="card__colores">
+                                    <span class="card__color card__color--rojo"></span>
+                                    <span class="card__color card__color--azul"></span>
+                                    <span class="card__color card__color--cafe"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagenes/producto-sofa.jpg" alt="Silla de mimbre" class="card__imagen">
+                        <div class="card__info">
+                            <h3 class="card__nombre">3 - Seater Sofa</h3>
+                            <div class="card__fila">
+                                <p class="card__precio">$79</p>
+                                <div class="card__colores">
+                                    <span class="card__color card__color--marron"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagenes/producto-lampara.jpg" alt="Lámpara colgante de dos focos" class="card__imagen">
+                        <div class="card__info">
+                            <h3 class="card__nombre">Pendent Lamp - 2 Bulbs</h3>
+                            <div class="card__fila">
+                                <p class="card__precio">$349</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card card--extra">
+                        <img src="imagenes/producto-kids-table.jpg" alt="Escritorio blanco para niños" class="card__imagen">
+                        <div class="card__info">
+                            <h3 class="card__nombre">Kid's Study Table - Royal White</h3>
+                            <div class="card__fila">
+                                <p class="card__precio">$510</p>
+                                <div class="card__colores">
+                                    <span class="card__color card__color--blanco"></span>
+                                    <span class="card__color card__color--gris"></span>
+                                    <span class="card__color card__color--negro"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__arriba">
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Explore</a></li>
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Contact Us</a></li>
+                <li><a href="#" class="footer__link">Help</a></li>
+            </ul>
+            <form class="footer__newsletter">
+                <label for="correo" class="footer__newsletter-texto">Want To Know When The Items Go On Sale? Get Notified!</label>
+                <div class="footer__campo">
+                    <input type="email" id="correo" class="footer__input" placeholder="Type In Your Email Address">
+                    <button type="submit" class="btn btn--dorado">Send</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer__abajo">
+            <ul class="footer__contacto">
+                <li class="footer__dato">
+                    <img src="imagenes/icon-mail.svg" alt="" class="footer__icono">
+                    <a href="mailto:furnito@gmail.com" class="footer__link footer__link--chico">Furnito@Gmail.Com</a>
+                </li>
+                <li class="footer__dato">
+                    <img src="imagenes/icon-phone.svg" alt="" class="footer__icono">
+                    <span>+65678253</span>
+                </li>
+                <li class="footer__dato">
+                    <img src="imagenes/icon-location.svg" alt="" class="footer__icono">
+                    <address>Suntec City Mall Tower 3<br>East Wing, #02-728/729/730</address>
+                </li>
+            </ul>
+            <div class="footer__redes">
+                <p class="footer__redes-texto">Follow Us:</p>
+                <a href="#" class="footer__red"><img src="imagenes/icon-instagram.svg" alt="Instagram"></a>
+                <a href="#" class="footer__red"><img src="imagenes/icon-facebook.svg" alt="Facebook"></a>
+                <a href="#" class="footer__red"><img src="imagenes/icon-linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
